@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/_head.ejs') %>
+  <body>
+<%- include('partials/_header.ejs') %>
+    <main role="main" class="container mt-4">
+      <h2>Reports</h2>
+      <form id="date-range-form">
+        <div class="row g-3 align-items-center">
+          <div class="col-auto">
+            <label for="start-date" class="col-form-label">Start Date</label>
+            <input type="date" id="start-date" class="form-control" required>
+          </div>
+          <div class="col-auto">
+            <label for="end-date" class="col-form-label">End Date</label>
+            <input type="date" id="end-date" class="form-control" required>
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Show</button>
+          </div>
+          <div class="col-auto">
+            <button id="download-csv" type="button" class="btn btn-secondary">Download CSV</button>
+          </div>
+        </div>
+      </form>
+      <canvas id="time-chart" width="400" height="200"></canvas>
+      <ul id="time-entries-list" class="list-group mt-3">
+        <!-- Time entries will be dynamically added here -->
+      </ul>
+    </main>
+  </body>
+<%- include('partials/_footer.ejs') %>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse/papaparse.min.js"></script>
+  <script src="/js/reports.js"></script>
+</html>
