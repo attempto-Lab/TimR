@@ -2,6 +2,11 @@
 
 TimR is a time-tracking web app designed for freelancers. It's built with Node.js and Express for the server-side, MongoDB for the database, and Bootstrap along with Vanilla JavaScript for the frontend. It enables users to easily track time spent on various tasks without the hassle of complex setup.
 
+## How it was made
+
+I've used [GPT-Pilot v2](https://github.com/Pythagora-io/gpt-pilot) and OpenAI GPT-4 to generate this project. Experiments using GPT-3.5 were not successful.
+The generation of this project required 1 hour and a $10 expenditure on GPT-4.
+
 ## Overview
 
 The application leverages Node.js and Express for robust server-side functionality, MongoDB for efficient data storage, and Bootstrap for responsive UI design. User sessions are managed through express-session for secure authentication. The app's architecture includes a separation of concerns with specific directories for models, routes (including API endpoints), and views, ensuring maintainability and scalability.
